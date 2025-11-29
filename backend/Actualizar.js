@@ -16,6 +16,7 @@ function ActualizarProductoStock({
     UPDATE ProductoStock
     SET Cantidad = '${cantidad ?? "Cantidad"}'
     WHERE Sucursal = '${sucursal ?? "Sucursal"}'
+    AND NombreItem = '${nombreItem ?? "NombreItem"}'
     AND ID = '${id ?? "ID"}';
   `;
 
